@@ -1,0 +1,38 @@
+html {
+	font-size: 62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+.table-wrapper {
+	background-color: antiquewhite;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ------------ Table ------------ */
+
+table {
+	border-collapse: collapse;
+}
+
+td,
+th {
+	border: 1px solid black;
+	padding: 1rem;
+}
+
+td:nth-child(odd),
+th:nth-child(odd) {
+	background-color: gray;
+}

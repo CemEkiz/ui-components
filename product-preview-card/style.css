@@ -1,1 +1,47 @@
+/* Reset CSS */
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+ol,
+summary {
+	list-style: none;
+}
+
+html,
+html:focus-within {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	overflow-x: hidden;
+}
+
+img,
+picture,
+svg {
+	width: 100%;
+	display: block;
+}

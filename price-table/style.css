@@ -38,6 +38,17 @@ th:nth-child(odd) {
 	background-color: #eee;
 }
 
+.subtitle {
+	text-align: left;
+	font-size: 24px;
+	background-color: #343434 !important;
+	color: white;
+}
+
+.full-feature-title {
+	font-size: 36px;
+}
+
 /* ------------ Accordion ------------ */
 
 .accordion {

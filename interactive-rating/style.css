@@ -1,7 +1,19 @@
+:root {
+  --primary-700: hsl(25, 97%, 53%);
+  --secondary-700: hsl(216, 12%, 8%);
+  --secondary-400: hsl(213, 19%, 18%);
+
+  --grey-400: hsl(216, 12%, 54%);
+  --grey-200: hsl(217, 12%, 63%);
+  --white: hsl(0, 0%, 100%);
+
+  --ff-primary: 'Overpass', sans-serif;
+}
+
 /* ---------------------------- Reset CSS ---------------------------- */
 
 /* Import font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 /* Box sizing rules */
 *,
@@ -40,11 +52,12 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  font-family: sans-serif;
+  font-family: var(--ff-primary);
   font-weight: 400;
   font-size: 16px;
   color: #000;
   overflow-x: hidden;
+  background-color: var(--secondary-700);
 }
 
 /* Make images easier to work with */

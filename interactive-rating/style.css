@@ -81,10 +81,13 @@ svg {
   padding: 32px;
   border-radius: 32px;
   width: 420px;
+  display: flex;
+  flex-direction: column;
 }
 
 .rating-card__icon-star {
   display: inline-block;
+  align-self: flex-start;
   padding: 12px;
   border-radius: 50%;
   background-color: var(--secondary-300);
@@ -158,4 +161,44 @@ svg {
   background-color: var(--white);
   color: var(--primary-700);
   transition: all 0.3s;
+}
+
+/* ---------------------------- Submit ---------------------------- */
+
+.submit-card {
+  background-color: var(--secondary-400);
+  padding: 32px;
+  border-radius: 32px;
+  width: 420px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.submit-card__img {
+  width: 200px;
+  margin-bottom: 32px;
+}
+
+.submit-card__rating {
+  background-color: var(--secondary-300);
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 50px;
+  line-height: 1;
+  color: var(--primary-700);
+  margin-bottom: 40px;
+}
+
+.submit-card__heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.submit-card__description {
+  text-align: center;
+  color: var(--secondary-200);
+  line-height: 1.5;
 }

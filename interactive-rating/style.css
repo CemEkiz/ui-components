@@ -202,3 +202,9 @@ svg {
   color: var(--secondary-200);
   line-height: 1.5;
 }
+
+.error-msg {
+  display: none;
+  margin-bottom: 12px;
+  color: #dd5353;
+}

@@ -1,6 +1,7 @@
 const rates = document.querySelectorAll('.rate');
 const form = document.querySelector('.rating-card');
 const container = document.querySelector('.container');
+const errorMsg = document.querySelector('.error-msg');
 
 let userRate;
 
@@ -42,6 +43,6 @@ form.addEventListener('submit', function (e) {
     form.style.display = 'none';
     container.insertAdjacentHTML('afterbegin', html);
   } else {
-    console.log('You must choose between 1 and 5');
+    errorMsg.style.display = 'block';
   }
 });

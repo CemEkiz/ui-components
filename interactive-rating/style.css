@@ -137,6 +137,10 @@ svg {
   transition: all 0.3s;
 }
 
+.rate.rate-selected {
+  background-color: #000;
+}
+
 .rating-card__submit {
   padding: 12px;
   width: 100%;

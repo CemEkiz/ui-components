@@ -4,28 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Interactive Rating</title>
   </head>
   <body>
-    <div class="rating-card">
-      <div class="rating-card__icon-star">
-        <svg>
-          <use href="assets/sprites.svg#icon-star"></use>
-        </svg>
-      </div>
-      <h2 class="rating-card__heading">How did we do?</h2>
-      <p class="rating-card__description">
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <div class="rating-card__rate-1">1</div>
-      <div class="rating-card__rate-2">2</div>
-      <div class="rating-card__rate-3">3</div>
-      <div class="rating-card__rate-4">4</div>
-      <div class="rating-card__rate-5">5</div>
+    <div class="container">
+      <div class="rating-card">
+        <div class="rating-card__icon-star">
+          <svg>
+            <use href="assets/sprites.svg#icon-star"></use>
+          </svg>
+        </div>
+        <h2 class="rating-card__heading">How did we do?</h2>
+        <p class="rating-card__description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating-card__rates">
+          <div class="rate">1</div>
+          <div class="rate">2</div>
+          <div class="rate">3</div>
+          <div class="rate">4</div>
+          <div class="rate">5</div>
+        </div>
 
-      <button class="rating-card__submit" type="button">Submit</button>
+        <button class="rating-card__submit" type="button">Submit</button>
+      </div>
     </div>
   </body>
 </html>

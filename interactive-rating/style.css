@@ -2,18 +2,15 @@
   --primary-700: hsl(25, 97%, 53%);
   --secondary-700: hsl(216, 12%, 8%);
   --secondary-400: hsl(213, 19%, 18%);
+  --secondary-300: hsl(213, 19%, 22%);
+  --secondary-200: hsl(216, 12%, 54%);
 
-  --grey-400: hsl(216, 12%, 54%);
-  --grey-200: hsl(217, 12%, 63%);
   --white: hsl(0, 0%, 100%);
 
-  --ff-primary: 'Overpass', sans-serif;
+  /* --ff-primary: 'Overpass', sans-serif; */
 }
 
 /* ---------------------------- Reset CSS ---------------------------- */
-
-/* Import font */
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 /* Box sizing rules */
 *,
@@ -52,12 +49,12 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  font-family: var(--ff-primary);
+  /* font-family: var(--ff-primary); */
+  font-family: 'Overpass';
   font-weight: 400;
   font-size: 16px;
   color: #000;
   overflow-x: hidden;
-  background-color: var(--secondary-700);
 }
 
 /* Make images easier to work with */
@@ -66,4 +63,80 @@ picture,
 svg {
   width: 100%;
   display: block;
+}
+
+/* ---------------------------- Card ---------------------------- */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--secondary-700);
+}
+
+.rating-card {
+  background-color: var(--secondary-400);
+  padding: 32px;
+  border-radius: 32px;
+  width: 420px;
+}
+
+.rating-card__icon-star {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: var(--secondary-300);
+  margin-bottom: 32px;
+}
+
+.rating-card__icon-star svg {
+  height: 16px;
+  width: 16px;
+  fill: var(--primary-700);
+}
+
+.rating-card__heading {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.rating-card__description {
+  color: var(--secondary-200);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.rating-card__rates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.rating-card__rates .rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--secondary-300);
+  color: var(--secondary-200);
+}
+
+.rating-card__submit {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  background-color: var(--primary-700);
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 32px;
 }

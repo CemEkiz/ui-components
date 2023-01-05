@@ -128,6 +128,13 @@ svg {
   font-weight: 700;
   background-color: var(--secondary-300);
   color: var(--secondary-200);
+  cursor: pointer;
+}
+
+.rating-card__rates .rate:hover {
+  background-color: var(--primary-700);
+  color: var(--white);
+  transition: all 0.3s;
 }
 
 .rating-card__submit {
@@ -138,5 +145,13 @@ svg {
   color: var(--white);
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: 700;
   border-radius: 32px;
+  cursor: pointer;
+}
+
+.rating-card__submit:hover {
+  background-color: var(--white);
+  color: var(--primary-700);
+  transition: all 0.3s;
 }
